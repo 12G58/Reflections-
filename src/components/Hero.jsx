@@ -14,7 +14,6 @@ const Hero = () => {
         </p>
       <p className = "justify-center text-white text-[25px] bold font-serif"> 
             <h1 className = "text-[35px] bold">Certain themes have governed experience since millennia.</h1> <br/>
-            The purpose of this website is to find them in science, technology and philosophy. 
           </p> 
         </div>
       </div>
