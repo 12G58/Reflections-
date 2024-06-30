@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+src/utils/Indras_Net/src/img/Obsidian.1.5.12.exe
+src/utils/Indras_Net/.parcel-cache/
