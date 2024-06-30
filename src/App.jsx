@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'; 
 import {Route, Routes} from 'react-router-dom'; 
 
-import {Logic, Contact, Science, Nlp, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
+import {Login, CreatePost, Nlp, Hero, Navbar} from './components';
 
 import { useState } from "react";
 import { signOut } from "firebase/auth";
@@ -14,7 +14,7 @@ const App = () => {
     signOut(auth).then(() => {
       localStorage.clear();
       setIsAuth(false);
-      window.location.pathname = "/logic";
+      window.location.pathname = "/login";
     });
   };
 
@@ -27,20 +27,15 @@ const App = () => {
       </div>
       <Routes>
         <Route path = '/' element = { <><div  className = "bg-hero-pattern bg-cover bg-no-repeat bg-center"> < Hero isAuth={isAuth} /></div> <div className = "bg-black"> <Nlp /></div></>} /> 
-        <Route path = '/logic' element = { <Logic setIsAuth = {setIsAuth} /> } />
-        <Route path = '/science' element = { <Science isAuth = {isAuth}/> } />
-        <Route path = '/machines' element = { <Tech /> } />
-        <Route path = '/philosophy' element = { <Works /> } /> 
+        <Route path = '/login' element = { <Login setIsAuth = {setIsAuth} /> }/>
+        <Route path = '/create_post' element = { <CreatePost /> } />
 
       </Routes>
-      
       <div className = "relatie z-0">
-        <Contact /> 
-        <StarsCanvas /> 
+       
       </div>
     </div>
     </BrowserRouter>
   )
 }
-
 export default App
