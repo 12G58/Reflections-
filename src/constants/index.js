@@ -28,11 +28,11 @@ import {
   export const navLinks = [
     {
       id: "logic",
-      title: "Logic",
+      title: "Login",
     },
     {
       id: "science",
-      title: "Science",
+      title: "Create Post",
     },
     {
       id: "machines",

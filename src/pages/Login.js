@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 import { auth, provider } from "../firebase-config";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-
-import { SectionWrapper } from '../hoc'; 
 
 function Login({ setIsAuth }) {
   let navigate = useNavigate();
@@ -26,4 +24,4 @@ function Login({ setIsAuth }) {
   );
 }
 
-export default Login; 
+export default Login;

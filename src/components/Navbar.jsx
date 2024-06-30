@@ -7,7 +7,6 @@ import {navLinks} from '../constants';
 
 import {acephale, logo, menu, close} from '../assets'; 
 
-
 const Navbar = () => {
   const [active, setActive] = useState(''); 
   const [toggle, setToggle] = useState(false); 
@@ -23,11 +22,11 @@ const Navbar = () => {
           window.scrollTo(0,0); 
         }}>
           <img src={acephale} alt = "acephale" className = "w-9 h-9 object-contain"/>
-          <p className = "text-white text-[20px] font-bold cursor-pointer flex">Acephale&nbsp;<br/><span className="md:block hidden">or Hyper-Empiricism</span></p>
+          <p className = "text-white text-[20px] font-bold cursor-pointer flex">The&nbsp;<br/><span className="md:block hidden">Syn-Thesis</span></p>
         </Link>
         <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((link) => (
-            <li key = {link.id} className ={`${ active === link.title ? "text-secondary" : "text-white"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick = {() => setActive(link.title)}>
+            <li key = {link.id} className ={`${ active === link.title ? "text-secondary" : "text-black"} hover:text-black text-[18px] font-medium cursor-pointer`} onClick = {() => setActive(link.title)}>
               <Link to = {`${link.id}`}>
                   {link.title}
               </Link>
@@ -41,7 +40,7 @@ const Navbar = () => {
             <ul className="list-none flex justify-end items-start flex-col gap-4">
             {navLinks.map((link) => (
               <li key = {link.id} className ={`${ active === link.title ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`} onClick = {() => { setToggle(!toggle); setActive(link.title);}}>
-                <a href ={`#${link.id}`}>{link.title}</a>
+                <a href ={`#${link.id}`}>{link.title}</a> 
               </li>
             ))}
           </ul>

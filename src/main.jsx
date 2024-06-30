@@ -9,8 +9,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode> 
 )
 
-ReactDOM.createRoot(document.createElementById('logic')).render(
+const logicElement = document.createElement('div');
+logicElement.id = 'logic';
+ReactDOM.createRoot(logicElement).render(
   <React.StrictMode>
     <App /> 
   </React.StrictMode>
 )
+
+/*ReactDOM.createRoot(document.createElementById('logic')).render(
+  <React.StrictMode>
+    <App /> 
+  </React.StrictMode>
+)*/
