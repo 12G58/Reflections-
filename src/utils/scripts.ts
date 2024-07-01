@@ -1,13 +1,6 @@
 import * as THREE from 'three'; 
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 
-import xpos from '../img/dawnmountain-xpos.png'; 
-import xneg from '../img/dawnmountain-xneg.png'; 
-import ypos from '../img/dawnmountain-ypos.png'; 
-import yneg from '../img/dawnmountain-yneg.png'; 
-import zpos from '../img/dawnmountain-zpos.png'; 
-import zneg from '../img/dawnmountain-zneg.png'; 
-
 const renderer = new THREE.WebGLRenderer(); 
 
 export const net = () => {
