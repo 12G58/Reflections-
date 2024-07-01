@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'; 
 import {Route, Routes} from 'react-router-dom'; 
 
-import {Login, CreatePost, Nlp, Hero, Navbar} from './components';
+import {Login, CreatePost, Nlp, Home, Navbar} from './components';
 
 import { useState } from "react";
 import { signOut } from "firebase/auth";
@@ -26,7 +26,7 @@ const App = () => {
         <Navbar /> 
       </div>
       <Routes>
-        <Route path = '/' element = { <><div  className = "bg-hero-pattern bg-cover bg-no-repeat bg-center"> < Hero isAuth={isAuth} /></div> <div className = "bg-black"> <Nlp /></div></>} /> 
+        <Route path = '/' element = { <><div  className = "bg-hero-pattern bg-cover bg-no-repeat bg-center"> < Home isAuth={isAuth} /></div> <div className = "bg-black"> <Nlp /></div></>} /> 
         <Route path = '/login' element = { <Login setIsAuth = {setIsAuth} /> }/>
         <Route path = '/create_post' element = { <CreatePost /> } />
 

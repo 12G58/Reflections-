@@ -1,12 +1,12 @@
 
-import Hero from './Hero';
+import Home from './Home';
 import Navbar from './Navbar';
 import Login from './Login';
 import CreatePost from './CreatePost';
 import Nlp from './Nlp';
 
 export {
-  Hero,
+  Home,
   Navbar,
   Login,
   CreatePost,
